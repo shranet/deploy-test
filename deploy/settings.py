@@ -14,8 +14,7 @@ from pathlib import Path
 import environ
 
 env = environ.Env(
-    DEBUG=(bool, False),
-    HOSTS=([], list)
+    DEBUG=(bool, False)
 )
 
 environ.Env.read_env()
@@ -33,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = env('HOSTS')
+ALLOWED_HOSTS = env('HOSTS', cast=list)
 
 
 # Application definition
