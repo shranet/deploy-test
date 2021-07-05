@@ -1,0 +1,1 @@
+[{"model": "main.languages", "pk": 1, "fields": {"name": "C", "added_at": "2021-07-05T11:23:20.994"}}, {"model": "main.languages", "pk": 2, "fields": {"name": "C++", "added_at": "2021-07-05T11:23:24.545"}}, {"model": "main.languages", "pk": 3, "fields": {"name": "Python", "added_at": "2021-07-05T11:23:28.289"}}]

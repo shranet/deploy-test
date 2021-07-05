@@ -1,0 +1,9 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+Index
+
+    {% for l in languages %}
+        <div>{{ l.name }} - {{ l.added_at }}</div>
+    {% endfor %}
+{% endblock %}
